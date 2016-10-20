@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011708307620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: disposal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - 33: {fileID: 33000011454159386}
   - 23: {fileID: 23000013566384412}
   - 120: {fileID: 120000013832041500}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: disposal_station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 33: {fileID: 33000010120163138}
   - 23: {fileID: 23000013196322756}
   - 120: {fileID: 120000013945796064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: disposal_station (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - 33: {fileID: 33000012144123318}
   - 23: {fileID: 23000010196639112}
   - 120: {fileID: 120000010051188066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: disposal_station (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - 4: {fileID: 4000014269919534}
   - 33: {fileID: 33000012140491486}
   - 23: {fileID: 23000012593836404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: disposal_ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,10 +383,17 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
+  - {x: 0.5, y: 0.4, z: -0.3}
+  - {x: 1.1, y: -0.1, z: 0.1}
+  - {x: 1.45, y: -0.113, z: 0.34}
+  - {x: 2.03, y: 0.12, z: 0.08}
+  - {x: 2.66, y: 0.087, z: -0.48}
+  - {x: 3.12, y: 0.07, z: -0.09}
+  - {x: 3.6, y: 0.11, z: -0.02}
   - {x: 4, y: 0, z: 0}
   m_Parameters:
-    startWidth: 0.05
-    endWidth: 0.3
+    startWidth: 0.7
+    endWidth: 0.03
     m_StartColor:
       serializedVersion: 2
       rgba: 4294928750
