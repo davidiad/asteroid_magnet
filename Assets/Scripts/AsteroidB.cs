@@ -8,6 +8,7 @@ public class AsteroidB : MonoBehaviour {
 	public ParticleSystem trail;
 	public GameObject explosion;
 	public GameObject asteroid;
+	public GameObject asteroidLOD1;
 	public GameObject brokenAsteroid;
 	private Rigidbody rb;
 	private bool exploded;
@@ -38,6 +39,7 @@ public class AsteroidB : MonoBehaviour {
 				Destroy (particles);
 				Destroy (trail);
 				asteroid.GetComponent<TrailRenderer> ().enabled = false;
+				asteroidLOD1.GetComponent<TrailRenderer> ().enabled = false;
 				Explode ();
 				exploded = true;
 			}
@@ -52,6 +54,7 @@ public class AsteroidB : MonoBehaviour {
 	void Explode() {
 		// swap the asteroid for the one made up of broken pieces
 		asteroid.GetComponent<MeshRenderer>().enabled = false;
+		asteroidLOD1.GetComponent<MeshRenderer>().enabled = false;
 		brokenAsteroid.SetActive (true);
 		foreach (Transform child in brokenAsteroid.transform) {
 
